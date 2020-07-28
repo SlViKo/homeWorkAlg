@@ -1,5 +1,6 @@
 package lesson3;
 
+import java.util.Arrays;
 import java.util.EmptyStackException;
 
 public class MyStack<T> {
@@ -27,8 +28,8 @@ public class MyStack<T> {
     }
 
     public void push(T item) {
-        if(isFull()) {
-            throw new StackOverflowError();
+        if(size == list.length) {
+            IncreaseCapacity();
         }
         list[size] = item;
         size++;
@@ -55,5 +56,9 @@ public class MyStack<T> {
         list = tempArr;
     }
 
+
+    private void IncreaseCapacity() {
+        list = Arrays.copyOf(list, list.length*2);
+    }
 
 }
