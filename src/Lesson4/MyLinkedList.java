@@ -69,13 +69,14 @@ public class MyLinkedList<T> implements Iterable<T>{
             int i = 0;
             Node node = first;
             while (i < size ) {
-                if (current == first) {
-                        return i++;
+                if (current == node) {
+                    i++;
+                        break;
                 }
                 node = first.next;
                 i++;
             }
-            return size;
+            return i;
         }
 
         @Override
