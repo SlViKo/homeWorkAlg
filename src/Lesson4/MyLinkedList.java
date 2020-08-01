@@ -50,7 +50,7 @@ public class MyLinkedList<T> implements Iterable<T>{
         @Override
         public T next() {
             current = current.next;
-            return current.previous.value;
+            return current.value;
         }
 
         @Override
@@ -61,7 +61,7 @@ public class MyLinkedList<T> implements Iterable<T>{
         @Override
         public T previous() {
             current = current.previous;
-            return current.next.value;
+            return current.value;
         }
 
         @Override
