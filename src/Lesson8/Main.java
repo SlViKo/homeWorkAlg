@@ -21,7 +21,8 @@ public class Main {
         chm.put(5,"five");
 //
       System.out.println(chm.get(2));
-      chm.delete(2);
+      System.out.println(chm.delete(2));
+      System.out.println(chm.delete(7));
       System.out.println(chm.get(2));
 
 //        Random random = new Random();
