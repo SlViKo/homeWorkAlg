@@ -18,16 +18,18 @@ public class Main {
         chm.put(2,"two");
         chm.put(3,"three");
         chm.put(4,"four");
-        chm.put(2,"five");
+        chm.put(5,"five");
 //
       System.out.println(chm.get(2));
+      chm.delete(2);
+      System.out.println(chm.get(2));
 
-        Random random = new Random();
-
-        for (int i = 0; i < 6; i++) {
-            chm.put(random.nextInt(100),"");
-        }
-
-        System.out.println(chm);
+//        Random random = new Random();
+//
+//        for (int i = 0; i < 6; i++) {
+//            chm.put(random.nextInt(100),"");
+//        }
+//
+//        System.out.println(chm);
     }
 }
